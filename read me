@@ -1,0 +1,16 @@
+
+Data sources :
+NOAA National Centers for Environmental Information (NCEI) Climate Data Online (CDO), GHCN-Daily Station USW00094789 (JFK International Airport).
+https://www.ncei.noaa.gov/orders/cdo/4423250.pdf
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/overflow-x
+
+Image sources:https://commons.wikimedia.org/w/index.php?search=jfk+airport&title=Special%3AMediaSearch&type=image
+
+https://commons.wikimedia.org/w/index.php?search=rain+storm+at+airport&title=Special%3AMediaSearch&type=image
+
+Transformation note:
+Daily precipitation values (PRCP) were downloaded as a multi-year CSV file, filtered for JFK Station USW00094789, and aggregated into annual total precipitation sums, annual rainy day counts, and maximum single-day peaks.
+
+
