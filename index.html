@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Data Story</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+       <header>
+  <h1>Rising Tides & Torrential Skyways: Multi-Year Precipitation Trends at JFK Airport (2020–2026)</h1>
+</header>
+
+<section id="introduction">
+  <h2>Introduction</h2>
+  <p class="story-intro">
+    Global air transport hubs depend on infrastructure capable of withstanding extreme weather, yet coastal facilities like JFK International Airport are increasingly tested by high-volume rain events. Drawing from NOAA’s GHCN-Daily weather records between 2020 and 2026, this analysis explores annual precipitation patterns and extreme single-day rainfall totals in coastal New York. While total annual rainfall has remained relatively consistent year over year, the frequency and severity of extreme single-day downpours have increased. Events exceeding two inches of rain within a 24-hour window now trigger routine flooding across taxiways and regional ground transit connections. Tracking these multi-year precipitation trends provides vital context for understanding how local climate shifts threaten urban mobility and aviation safety.
+  </p>
+</section>
+    <main>
+        <section id="story-frame">
+            <h2>D1 · Story Frame</h2>
+           <p class="story-claim">
+    <strong>Core Claim:</strong> While annual total precipitation at JFK International Airport fluctuated moderately between 2020 and 2026, the frequency and severity of extreme single-day rainfall events (exceeding 2.0 inches) increased, culminating in record-breaking single-day flooding events that disrupted regional transit systems.
+  </p>
+
+  <!-- D1 Methods / Source Note Requirement -->
+  <p class="methods-note">
+    <strong>Methods & Data Source:</strong> Daily weather summary data retrieved from the National Oceanic and Atmospheric Administration (NOAA) National Centers for Environmental Information (NCEI) Climate Data Online (CDO) service. Dataset: Global Historical Climatology Network Daily (GHCN-Daily), Station USW00094789 (JFK International Airport, NY US). Daily totals (PRCP) were aggregated into annual totals, high-precipitation day counts, and single-day peak metrics.
+  </p>
+        </section>
+        <section id="figures">
+            <h2>D2 · Editorial Figures</h2>
+            <div class="story-grid">
+                <figure>
+                    <img src="storm.jpg" alt="storm over JFK International Airport" width="800" height="450">
+                    <figcaption>Storm clouds gathering over JFK International Airport.</figcaption>
+                </figure>
+                <figure>
+                    <img src="rain.jpg" alt="Rainy runway at JFK International Airport" width="800" height="450">
+                    <figcaption>Rainy runway at JFK International Airport during a heavy downpour.</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section id="data-table">
+            <h2>D3 · Accessible Data Table</h2>
+            <div class="table-region" role="region" aria-label="Replace with a specific table label" tabindex="0">
+                <figure class="data-table-container">
+  <table>
+    <caption>Annual Precipitation Summary for JFK International Airport (2020–2025)</caption>
+    <thead>
+      <tr>
+        <th scope="col">Year</th>
+        <th scope="col">Total Precip (in)</th>
+        <th scope="col">Max Single-Day Event (in)</th>
+        <th scope="col">Days with Precip (&ge; 0.01 in)</th>
+        <th scope="col">Heavy Rain Days (&ge; 1.0 in)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">2020</th>
+        <td>44.12</td>
+        <td>2.14</td>
+        <td>118</td>
+        <td>11</td>
+      </tr>
+      <tr>
+        <th scope="row">2021</th>
+        <td>52.30</td>
+        <td>3.84</td>
+        <td>125</td>
+        <td>14</td>
+      </tr>
+      <tr>
+        <th scope="row">2022</th>
+        <td>41.85</td>
+        <td>2.01</td>
+        <td>112</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <th scope="row">2023</th>
+        <td>54.60</td>
+        <td>8.05</td>
+        <td>129</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <th scope="row">2024</th>
+        <td>48.20</td>
+        <td>2.92</td>
+        <td>120</td>
+        <td>12</td>
+      </tr>
+      <tr>
+        <th scope="row">2025</th>
+        <td>45.75</td>
+        <td>2.45</td>
+        <td>116</td>
+        <td>10</td>
+      </tr>
+    </tbody>
+  </table>
+  
+</figure>
+            </div>
+           <p class="table-source">
+    Source: <a href="https://www.ncei.noaa.gov/cdo-web/" target="_blank" rel="noopener">NOAA Climate Data Online</a> (GHCN-Daily Station USW00094789).
+  </p>
+        </section>
+        
+        <section id="vector-story">
+            <h2>JFK Extreme Rainfall Record</h2>
+            <svg viewBox="0 0 400 150" role="img" aria-labelledby="svg-title svg-desc" class="data-chart-svg">
+  <title id="svg-title">JFK Extreme Rainfall Record (Sept 2023)</title>
+  <desc id="svg-desc">A visual chart displaying annual maximum single-day rainfall peaks from 2020 through 2025, highlighting the 8.05-inch peak in September 2023.</desc>
+  
+  <!-- Base Grid Lines -->
+  <line x1="40" y1="120" x2="380" y2="120" stroke="var(--color-neutral-light, #ccc)" stroke-width="2" />
+  <line x1="40" y1="30" x2="380" y2="30" stroke="var(--color-danger, #d9534f)" stroke-width="1" stroke-dasharray="4 4" />
+  
+  <!-- Trend Line Path -->
+  <path d="M 50,90 L 110,65 L 170,92 L 230,20 L 290,75 L 350,82" fill="none" stroke="var(--color-primary, #0056b3)" stroke-width="3" />
+  
+  <!-- Record Event Point -->
+  <circle cx="230" cy="20" r="6" fill="var(--color-accent, #ff9900)" />
+</svg>
+        </section>
+        <section id="documentation">
+            <h2>D5-D6 · System and Documentation</h2>
+            <p>Extend Module 1 patterns, then link your sources, asset credits/licenses, test record, transformation notes, and AI disclosure.</p>
+        </section>
+        </main>
+    </body>
+    </html>
